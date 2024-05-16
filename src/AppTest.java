@@ -11,6 +11,17 @@
 public class AppTest {
   @Test
   public void tests() {
-    
+   
+    int[][] a = {
+        {3,1},
+        {5,1},
+        {2,1},
+        {1,3}
+    };
+    assertEquals(4,App.sumRow(a,0));
+    assertEquals(6,App.sumRow(a,1));
+    assertEquals(3,App.sumRow(a,2));
+    assertEquals(4,App.sumRow(a,3));
   }
+  
 }
